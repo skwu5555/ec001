@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>2017年全國電子分店分布圖</title>
+    <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+    <script type="text/javascript" src="https://d3js.org/topojson.v1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/chart.css" />
+</head>
+
+<body>
+
+    <div class="title">2017年全國電子分店分布圖</div>
+
+    <div class="tag_group">
+        <div id="tag_1" class="tag selected">臺灣地圖</div>
+        <div id="tag_2" class="tag">氣泡圖</div>
+    </div>
+
+    <div class="data_block data_block_1">
+        <div id="taiwan_map">
+            <div id="box" style="top:35px;left:110px;"></div>
+            <div id="box" style="top:130px;left:110px;height:60px;"></div>
+            <div id="map_explanation" style="visibility:hidden;">
+                <div id="city_name" style="font-size:28px;"></div>
+                <div id="map_num_text"></div>
+                <div style="font-size:28px;">間</div>
+            </div>
+            <div id="map_div"></div>
+            <div id="mp_sidebar"></div>
+        </div>
+    </div>
+
+    <div class="data_block data_block_2">
+        <div id="bubble_div"></div>
+        <div id="bubble_data">
+            <div class="word">2017年<span class="city">全國</span>全國電子分店分布</span></div>
+            <div class="table">
+                <div class="tr">
+                    <div class="td sn">序號</div>
+                    <div class="td tel">店名</div>
+                    <div class="td address">地址</div>
+                </div>
+            </div>
+            <div class="page_div">
+                <div class="pre_page hidden"><a href="javascript:void(0);">上一頁</a></div>
+                <div class="page_list"></div>
+                <div class="next_page hidden"><a href="javascript:void(0);">下一頁</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="window_top">
+        <span>TOP</span>
+    </div>
+
+    <script type="text/javascript">
+        function removeAllSpace(str) {
+            return str.replace(/\s+/g, "");
+        }
+
+    </script>
+    <script type="text/javascript" src="js/county.js"></script>
+    <script type="text/javascript" src="js/chart.js"></script>
+
+</body>
+
+</html>
